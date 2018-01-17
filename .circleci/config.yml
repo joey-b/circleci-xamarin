@@ -10,7 +10,7 @@ jobs:
     shell: /bin/bash --login -o pipefail
     steps:
       - checkout
-      - run: echo "hello"
+      - run: xbuild
       - store_artifacts:
           path: /Users/distiller/project/output
       - store_test_results:
