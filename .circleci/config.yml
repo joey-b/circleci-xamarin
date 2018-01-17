@@ -4,14 +4,10 @@ jobs:
     macos:
       xcode: "9.0"
     working_directory: /Users/distiller/project
-    environment:
-      FL_OUTPUT_DIR: /Users/distiller/project/output
-      FASTLANE_LANE: test
     shell: /bin/bash --login -o pipefail
     steps:
       - checkout
+      - run: brew --version
+      - run: brew install caskroom/cask/brew-cask
+      - run: brew cask install visual-studio
       - run: xbuild
-      - store_artifacts:
-          path: /Users/distiller/project/output
-      - store_test_results:
-          path: /Users/distiller/project/output/scan
