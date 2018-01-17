@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "circleci-xamarin", "circleci-xamarin.csproj", "{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Release|iPhone.Build.0 = Release|iPhone
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6F50F6F9-7E72-4175-BDC5-A67D2C2E0726}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
