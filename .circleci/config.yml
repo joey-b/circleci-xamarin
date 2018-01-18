@@ -10,4 +10,4 @@ jobs:
       - run: brew --version
       - run: brew install caskroom/cask/brew-cask
       - run: brew cask install visual-studio
-      - run: xbuild
+      - run: msbuild /p:Configuration="Debug" /p:Platform="iPhoneSimulator" /t:Build circleci-xamarin.sln
