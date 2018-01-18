@@ -2,14 +2,11 @@ version: 2
 jobs:
   build:
     macos:
-      xcode: "9.0"
+      xcode: "9.2.0"
     working_directory: /Users/distiller/project
     shell: /bin/bash --login -o pipefail
     steps:
       - checkout
-      - run: brew --version
       - run: brew install caskroom/cask/brew-cask
       - run: brew cask install xamarin xamarin-ios visual-studio
-      - run: msbuild /t:restore circleci-xamarin.sln
-      - run: msbuild /t:restore circleci-xamarin.csproj
       - run: msbuild /p:Configuration="Debug" /p:Platform="iPhoneSimulator" /t:Build circleci-xamarin.sln
