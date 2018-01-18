@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: brew --version
       - run: brew install caskroom/cask/brew-cask
-      - run: brew cask install visual-studio
+      - run: brew cask install xamarin xamarin-jdk xamarin-ios visual-studio
       - run: msbuild /t:restore circleci-xamarin.sln
       - run: msbuild /t:restore circleci-xamarin.csproj
       - run: msbuild /p:Configuration="Debug" /p:Platform="iPhoneSimulator" /t:Build circleci-xamarin.sln
